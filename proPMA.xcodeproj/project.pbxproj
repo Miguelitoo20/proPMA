@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6516F0F82C2620810066669C /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6516F0F72C2620800066669C /* homeViewController.swift */; };
+		653EC7F72C2B7BE1002EBA67 /* modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653EC7F62C2B7BE1002EBA67 /* modelos.swift */; };
+		653EC7F92C2B7C5D002EBA67 /* AgregarPublicacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653EC7F82C2B7C5D002EBA67 /* AgregarPublicacionViewController.swift */; };
 		656E5CC72BFE348F0056C11B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E5CC62BFE348F0056C11B /* AppDelegate.swift */; };
 		656E5CC92BFE348F0056C11B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E5CC82BFE348F0056C11B /* SceneDelegate.swift */; };
 		656E5CCB2BFE348F0056C11B /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E5CCA2BFE348F0056C11B /* iniciarSesionViewController.swift */; };
@@ -40,12 +43,17 @@
 		656E5D0E2BFE40720056C11B /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 656E5D0D2BFE40720056C11B /* FirebaseRemoteConfigSwift */; };
 		656E5D102BFE40720056C11B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 656E5D0F2BFE40720056C11B /* FirebaseStorage */; };
 		656E5D122BFE40720056C11B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 656E5D112BFE40720056C11B /* FirebaseStorageCombine-Community */; };
+		65807F162C2CA6E600AACF2A /* DetallePublicacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65807F152C2CA6E600AACF2A /* DetallePublicacionViewController.swift */; };
 		658469632C077D5200E4FAD2 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 658469622C077D5200E4FAD2 /* GoogleSignIn */; };
 		658469652C077D5200E4FAD2 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 658469642C077D5200E4FAD2 /* GoogleSignInSwift */; };
 		6588D2382C078F3100E45F6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6588D2372C078F3100E45F6B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6516F0F42C261AC40066669C /* proPMA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = proPMA.entitlements; sourceTree = "<group>"; };
+		6516F0F72C2620800066669C /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		653EC7F62C2B7BE1002EBA67 /* modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelos.swift; sourceTree = "<group>"; };
+		653EC7F82C2B7C5D002EBA67 /* AgregarPublicacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarPublicacionViewController.swift; sourceTree = "<group>"; };
 		656E5CC32BFE348F0056C11B /* proPMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proPMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656E5CC62BFE348F0056C11B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		656E5CC82BFE348F0056C11B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +62,7 @@
 		656E5CCF2BFE34900056C11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		656E5CD22BFE34900056C11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		656E5CD42BFE34900056C11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65807F152C2CA6E600AACF2A /* DetallePublicacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePublicacionViewController.swift; sourceTree = "<group>"; };
 		6588D2372C078F3100E45F6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,10 +125,15 @@
 		656E5CC52BFE348F0056C11B /* proPMA */ = {
 			isa = PBXGroup;
 			children = (
+				6516F0F42C261AC40066669C /* proPMA.entitlements */,
 				6588D2372C078F3100E45F6B /* GoogleService-Info.plist */,
 				656E5CC62BFE348F0056C11B /* AppDelegate.swift */,
 				656E5CC82BFE348F0056C11B /* SceneDelegate.swift */,
+				653EC7F62C2B7BE1002EBA67 /* modelos.swift */,
 				656E5CCA2BFE348F0056C11B /* iniciarSesionViewController.swift */,
+				6516F0F72C2620800066669C /* homeViewController.swift */,
+				653EC7F82C2B7C5D002EBA67 /* AgregarPublicacionViewController.swift */,
+				65807F152C2CA6E600AACF2A /* DetallePublicacionViewController.swift */,
 				656E5CCC2BFE348F0056C11B /* Main.storyboard */,
 				656E5CCF2BFE34900056C11B /* Assets.xcassets */,
 				656E5CD12BFE34900056C11B /* LaunchScreen.storyboard */,
@@ -235,9 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653EC7F92C2B7C5D002EBA67 /* AgregarPublicacionViewController.swift in Sources */,
+				65807F162C2CA6E600AACF2A /* DetallePublicacionViewController.swift in Sources */,
 				656E5CCB2BFE348F0056C11B /* iniciarSesionViewController.swift in Sources */,
+				653EC7F72C2B7BE1002EBA67 /* modelos.swift in Sources */,
 				656E5CC72BFE348F0056C11B /* AppDelegate.swift in Sources */,
 				656E5CC92BFE348F0056C11B /* SceneDelegate.swift in Sources */,
+				6516F0F82C2620810066669C /* homeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = proPMA/proPMA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -409,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = proPMA/proPMA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

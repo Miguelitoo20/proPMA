@@ -18,8 +18,17 @@ class iniciarSesionViewController: UIViewController {
             print("Intentando Iniciar Sesión")
             if error != nil {
                 print("Se presento el siguiente error: \(error)")
+                Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in print("Intentando crear un usuario nuevo")
+                    if error != nil {
+                        print("Se presento un error al crear usuario: \(error)")
+                    } else {
+                        print("Usuario creado con exito")
+                        self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
+                            }
+                })
             } else {
                 print("Incio de Sesión Exitoso")
+                self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
             }
         }
     }
@@ -43,10 +52,11 @@ class iniciarSesionViewController: UIViewController {
 
             Auth.auth().signIn(with: credential) { authResult, error in
                 if let error = error {
-                    print("Error al iniciar sesión en Firebase: \(error.localizedDescription)")
+                    print("Error al iniciar sesión: \(error.localizedDescription)")
                     return
                 }
-                print("Usuario ha iniciado sesión con Firebase")
+                print("Usuario ha iniciado sesión con éxito")
+                self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
             }
         }
     }
